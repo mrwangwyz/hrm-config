@@ -7,7 +7,9 @@ spring:
 zuul:
   routes:
     sysmanage.serviceId: hrm-management # 服务名
-    sysmanage.path: /sysmanage/** # 把myUser打头的所有请求都转发给user-provider
+    sysmanage.path: /sysmanage/** # 把hrm-management打头的所有请求都转发给sysmanage
+    sysmanage.serviceId: hrm-course # 服务名
+    sysmanage.path: /course/** # 把hrm-course打头的所有请求都转发给course
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
