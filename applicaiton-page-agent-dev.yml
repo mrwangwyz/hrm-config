@@ -1,0 +1,11 @@
+spring:
+  profiles:
+      active: dev
+  cloud:
+    config:
+      name: application-page-agent #github上面名称
+      profile: ${spring.profiles.active} #环境 java -jar -D xxx jar
+      label: master #分支
+      discovery:
+        enabled: true #从eureka上面找配置服务
+        service-id: config-server #指定服务名
