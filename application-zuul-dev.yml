@@ -11,7 +11,7 @@ zuul:
     course.serviceId: hrm-course # 服务名
     course.path: /course/** # 把hrm-course打头的所有请求都转发给course
     fastdfs.serviceId: hrm-fastdfs # 服务名
-    fastdfs.path: /fastdfs/** # 把hrm-course打头的所有请求都转发给course
+    fastdfs.path: /fastdfs/** # 把hrm-fastdfs打头的所有请求都转发给fastdfs
     es.serviceId: hrm-es # 服务名
     es.path: /es/** # 把hrm-es打头的所有请求都转发给course
     redis.serviceId: hrm-redis # 服务名
