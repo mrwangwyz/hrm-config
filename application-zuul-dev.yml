@@ -15,7 +15,7 @@ zuul:
     es.serviceId: hrm-es # 服务名
     es.path: /es/** # 把hrm-es打头的所有请求都转发给course
     redis.serviceId: hrm-redis # 服务名
-    redis.path: /redis/** # 把hrm-es打头的所有请求都转发给course
+    redis.path: /redis/** # 把hrm-redis打头的所有请求都转发给redis
     page.serviceId: hrm-page # 服务名
     page.path: /page/** # 把hrm-es打头的所有请求都转发给course
     pageAgent.serviceId: hrm-page-agent # 服务名
